@@ -1,0 +1,19 @@
+package com.sfgbrewery.model.events;
+
+import com.sfgbrewery.model.BeerOrderDto;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class AllocateOrderResult {
+	
+	BeerOrderDto beerOrderDto;
+	Boolean allocationError = false;
+	Boolean pendingInventory = false;
+
+}

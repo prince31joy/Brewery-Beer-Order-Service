@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.sfgbrewery</groupId>
+		<artifactId>mssc-brewery-bom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>com.sfgbrewery</groupId>
+	<artifactId>mssc-beer-order-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mssc-beer-order-service</name>
+	<description>MSSC Beer Service</description>
+
+	<dependencies>
+		<dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-artemis</artifactId>
+		</dependency>
+		 <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jms-server</artifactId>
+            <scope>test</scope>
+        </dependency>
+         <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+<!-- 	<repositories> -->
+<!-- 		<repository> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>false</enabled> -->
+<!-- 			</snapshots> -->
+<!-- 			<id>central</id> -->
+<!-- 			<name>libs-release</name> -->
+<!-- 			<url>https://dcsartifacts.dell.com/artifactory/libs-release</url> -->
+<!-- 		</repository> -->
+<!-- 		<repository> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>true</enabled> -->
+<!-- 			</snapshots> -->
+
+<!-- 			<id>snapshots</id> -->
+<!-- 			<name>libs-snapshot</name> -->
+<!-- 			<url>https://dcsartifacts.dell.com/artifactory/libs-snapshot</url> -->
+<!-- 		</repository> -->
+<!-- 	</repositories> -->
+<!-- 	<pluginRepositories> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>false</enabled> -->
+<!-- 			</snapshots> -->
+<!-- 			<id>central</id> -->
+<!-- 			<name>plugins-release</name> -->
+<!-- 			<url>https://dcsartifacts.dell.com/artifactory/plugins-release</url> -->
+<!-- 		</pluginRepository> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>true</enabled> -->
+<!-- 			</snapshots> -->
+<!-- 			<id>snapshots</id> -->
+<!-- 			<name>plugins-snapshot</name> -->
+<!-- 			<url>https://dcsartifacts.dell.com/artifactory/plugins-snapshot</url> -->
+<!-- 		</pluginRepository> -->
+<!-- 	</pluginRepositories> -->
+	
+	
+
+</project>
